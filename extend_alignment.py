@@ -13,7 +13,7 @@ def getArgs(argv=None):
 
 
 
-# 比较两个碱基分数， gaps的分数考虑在cal_score, 此处为-2
+# 比较两个碱基分数， gaps的分数考虑在cal_score
 def diff(first, second):
 	if first == second:
 		return match 
