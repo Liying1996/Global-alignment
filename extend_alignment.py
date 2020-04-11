@@ -59,7 +59,7 @@ def cal_score(seq1, seq2):
 			else:
 				current_score.append(scores[num1, num2-1] + gap)	
 
-			# 对出现多段gaps的情况罚分, extend = 0.5
+			# 对出现多段gaps的情况罚分
 			current_index = current_score.index(max(current_score)) # 当前索引，不是0就gap
 
 			scores[num1, num2] = max(current_score)
